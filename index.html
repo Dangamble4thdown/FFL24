@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diab Fantasy Football League Official Site</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #8b0000, #228b22);
+            color: white;
+        }
+
+        header {
+            background-color: #8b0000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #8b0000;
+        }
+
+        main {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .section h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        iframe.youtube-audio {
+            display: none; /* Hide the video player */
+        }
+
+        footer {
+            background: #228b22;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        /* Christmas-themed falling snow */
+        .snow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .snowflake {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            from {
+                transform: translateY(-10vh);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(110vh);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Diab Fantasy Football League Official Site
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#standings">Standings</a>
+        <a href="#playoffs">Playoffs</a>
+        <a href="#rules">League Rules</a>
+        <a href="#news">News</a>
+    </nav>
+
+    <main>
+        <!-- Standings Section -->
+        <section id="standings" class="section">
+            <h2>League Standings</h2>
+            <img src="https://media-hosting.imagekit.io//3cb722f9059c4ed1/Screenshot%202024-12-10%20091602.png?Expires=1734015014&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=hqPLlcoT8uAAh5u1ufVMeOMBHDVt0m5AppkwLHqimbnpdaDWlzCwr9W8zvSCtErO4yLsoDUAzqET4bfI1QBmksSRc5rPsGXNuDSDXCxtzgtNPIzs~zI1iEokr12pg1Uh4Qc3W-De8U5MxbSIoXwdp7BbieDdu8MuvBQn~Imkw5AyaPVTkCRLpxOnrxNaUdLIWkSChoeXx9keO7icZ~UKFor~ruw4x8CCKUw1kVWS~U-KXfxLGq75-lR~-XuOW2CXpNU-GK1QUJTJvj1ngFvt~RRzbDOC-J6q7LcueUqYf77XwxByGNs8C2QwRFSmShMiU9Uh0nEUEPJwlTfUDXIxYQ__" alt="League Standings" style="width: 100%; border-radius: 10px;">
+        </section>
+
+        <!-- Playoffs Section -->
+        <section id="playoffs" class="section">
+            <h2>Playoff Bracket</h2>
+            <img src="https://media-hosting.imagekit.io//470dba51f17d44b3/Screenshot%202024-12-10%20091722.png?Expires=1734015014&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=Rtzk5t1l~Q8tKXuDEImkdSzGVthURc-vwiZc6KKXMVe55dlQMdRJMaVwrFlEkesY4LnP9Q49qOp5WZnhqBVEuS1bXyD7ozrFlWz51~kiMRCEguQKb9EJ6XKFgJNG~65L7XuurZK3poSfVO1M3LC36ssO0n2hr4qKLhlaTamvPEPcfeoIEZYNUcldi8NS6X9SuUhSds9AwEIcC1O2hxHyyOSRTIyPw2OWkWega8HKEBqQDHpp0~H7EMThYtph9vDMzdzpuph9sAgcC0tH0WPoUTec9LVTXsITFYTdxugVkuQDUTpz0tOBGqDp83LA6BLrp13i60XC-DStdWVnDr7EEQ__" alt="Playoff Bracket" style="width: 100%; border-radius: 10px;">
+        </section>
+
+        <!-- Rules Section -->
+        <section id="rules" class="section">
+            <h2>League Rules</h2>
+            <iframe src="https://docs.google.com/document/d/e/2PACX-1vTkFlha5UmqF9QZAD-EkG8VktD4DjIQFTro9BYF7T5Vp8PF0GgfWiNlM-BDuOKEDkq91uiQTVt7sSET/pub?embedded=true"></iframe>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="section">
+            <h2>Latest News</h2>
+            <p>Breaking news and updates will be displayed here.</p>
+            <iframe 
+                id="news-audio" 
+                class="youtube-audio" 
+                src="https://www.youtube.com/embed/jlqml744E9k?si=Zeh65sVZwaQOu58A&autoplay=0&loop=1&playlist=jlqml744E9k" 
+                allow="autoplay" 
+                allowfullscreen>
+            </iframe>
+        </section>
+    </main>
+   <!-- News Section -->
+        <section id="news" class="section">
+            <h2>Latest News</h2>
+            <div class="dropdown" onclick="toggleDropdown()">Week 14 Team Grades and Analysis</div>
+            <div id="dropdown-content" class="dropdown-content">
+                <h3>Week 14 Team Grades and Analysis</h3>
+                <p><strong>Matchup 1: Team Louisdiab vs. Windsor Express</strong></p>
+                <p><strong>Team Louisdiab (Grade: C):</strong> The team underperformed, with key players like Justin Herbert struggling. To improve, they need to focus on finding consistent scorers and avoid risky plays.</p>
+                <p><strong>Windsor Express (Grade: A):</strong> A strong performance led by Josh Allen. This team is poised for success if they continue their momentum.</p>
+
+                <p><strong>Matchup 2: Team PierreDiab vs. Team thesungawd</strong></p>
+                <p><strong>Team PierreDiab (Grade: B):</strong> Solid showing with great RB performances but missed opportunities at WR. Strengthening WR options will boost the team.</p>
+                <p><strong>Team thesungawd (Grade: C):</strong> A decent effort but lacked standout performances. Improving consistency across all positions is key.</p>
+
+                <p><strong>Matchup 3: Liam Mastronardi vs. #Tanking</strong></p>
+                <p><strong>Liam Mastronardi (Grade: A):</strong> Dominated with a well-rounded team effort. This team is a championship contender.</p>
+                <p><strong>#Tanking (Grade: D):</strong> A rough week with underwhelming performances. A rebuild is necessary for next season.</p>
+
+                <p><strong>Matchup 4: JustwinBaby! vs. MCDC</strong></p>
+                <p><strong>JustwinBaby! (Grade: F):</strong> Struggled heavily. They need a drastic overhaul to compete.</p>
+                <p><strong>MCDC (Grade: A):</strong> Outstanding showing, especially from their QB. This team has playoff potential.</p>
+
+                <p><strong>Matchup 5: Android Nightmares vs. Team theLionsChamp</strong></p>
+                <p><strong>Android Nightmares (Grade: A):</strong> Dominated the matchup with consistent scoring. They should be confident heading into the playoffs.</p>
+                <p><strong>Team theLionsChamp (Grade: D):</strong> Poor execution across the board. Better player management is needed.</p>
+
+                <p><strong>Matchup 6: Hurts So Good vs. Injured Reserve</strong></p>
+                <p><strong>Hurts So Good (Grade: C):</strong> A valiant effort but fell short due to benching high-scorers.</p>
+                <p><strong>Injured Reserve (Grade: A+):</strong> Exceptional performance. This team is the favorite to win the league.</p>
+            </div>
+        </section>
+    </main>
+   <!-- Week 14 Power Rankings Article -->
+            <div class="dropdown" onclick="toggleDropdown('power-rankings-content')">Week 14 Power Rankings</div>
+            <div id="power-rankings-content" class="dropdown-content">
+                <h3>Week 14 Power Rankings</h3>
+                <ol>
+                    <li><strong>Injured Reserve:</strong> Outstanding consistency with a deep roster. Likely championship contender.</li>
+                    <li><strong>Louisdiab:</strong> Strong record and solid performances, but some weak spots could cost them.</li>
+                    <li><strong>Liam Mastronardi:</strong> A strong competitor, but needs to optimize WR strategy.</li>
+                    <li><strong>MCDC:</strong> Balanced roster with key performers, making them a strong playoff contender.</li>
+                    <li><strong>Hurts So Good:</strong> Shows potential, but lack of depth may hurt in playoffs.</li>
+                    <li><strong>PierreDiab:</strong> A dark horse with a chance to surprise if they can address inconsistency.</li>
+                    <li><strong>Windsor Express:</strong> On the edge, needs consistent efforts to improve ranking.</li>
+                    <li><strong>thesungawd:</strong> Good potential, but needs to secure stronger performances from starters.</li>
+                    <li><strong>Android Nightmares:</strong> Too inconsistent to compete with the top tier.</li>
+                    <li><strong>#Tanking:</strong> Needs a rebuild for next season to regain competitiveness.</li>
+                    <li><strong>JustwinBaby!:</strong> Struggling team in need of key improvements.</li>
+                    <li><strong>theLionsChamp:</strong> A difficult season with no momentum; focus on next year.</li>
+                </ol>
+                <h4>Playoff Prediction:</h4>
+                <p><strong>Injured Reserve</strong> has the best chance to win the playoff bracket due to their depth and top-tier performances. If their key players remain consistent, they are the favorites to take the championship.</p>
+            </div>
+        </section>
+    </main>
+   <!-- Week 15 Waiver Wire Article -->
+            <div class="dropdown" onclick="toggleDropdown('waiver-wire-content')">Week 15 Waiver Wire</div>
+            <div id="waiver-wire-content" class="dropdown-content">
+                <h3>Week 15 Waiver Wire</h3>
+                <ol>
+                    <li><strong>Isaiah Davis (RB, NYJ) - FAAB: 20-25%</strong>
+                        <p>Davis is primed to take over the backfield in a favorable matchup against Jacksonville. With an increased workload and red-zone potential, he's a must-add for RB-needy teams.</p>
+                    </li>
+                    <li><strong>Jalen McMillan (WR, TB) - FAAB: 15-20%</strong>
+                        <p>McMillan showed flashes of brilliance in Week 14 and could be a key piece in the Tampa offense. His ability to stretch the field makes him an enticing WR3/FLEX option.</p>
+                    </li>
+                    <li><strong>Devin Singletary (RB, HOU) - FAAB: 12-18%</strong>
+                        <p>Singletary has regained relevance in Houston's backfield. With consistent touches and passing-game involvement, he's a solid depth option with upside.</p>
+                    </li>
+                    <li><strong>Roschon Johnson (RB, CHI) - FAAB: 10-15%</strong>
+                        <p>Johnson’s workload is expected to increase with recent injuries in the Bears' backfield. A versatile runner, he has the potential for double-digit fantasy points.</p>
+                    </li>
+                    <li><strong>Dalton Schultz (TE, HOU) - FAAB: 10-12%</strong>
+                        <p>Schultz is a dependable tight end option in a productive Houston offense. He’s a red-zone threat with a safe floor for Week 15.</p>
+                    </li>
+                    <li><strong>Ricky Pearsall (WR, LAR) - FAAB: 8-10%</strong>
+                        <p>Pearsall is emerging as a key target in Los Angeles. With the Rams focusing on their passing attack, he could be a sneaky FLEX play.</p>
+                    </li>
+                    <li><strong>Alec Pierce (WR, IND) - FAAB: 8-10%</strong>
+                        <p>Pierce continues to build chemistry with the Colts' QB. His big-play ability makes him worth a stash for managers in need of WR depth.</p>
+                    </li>
+                    <li><strong>Justice Hill (RB, BAL) - FAAB: 8-10%</strong>
+                        <p>Hill remains involved in the Ravens' backfield and could see increased touches if injury concerns linger. He’s a solid handcuff option.</p>
+                    </li>
+                    <li><strong>Pat Freiermuth (TE, PIT) - FAAB: 7-9%</strong>
+                        <p>Freiermuth has shown signs of life in Pittsburgh’s passing game. He’s a high-upside TE option for Week 15.</p>
+                    </li>
+                    <li><strong>Khalil Herbert (RB, CHI) - FAAB: 5-7%</strong>
+                        <p>Herbert could see increased touches in Chicago’s run-heavy offense. He’s a low-cost pickup with upside if he finds the end zone.</p>
+                    </li>
+                    <li><strong>Jaylen Wright (RB, MIA) - FAAB: 5-7%</strong>
+                        <p>Wright offers deep-league RB depth, especially with his potential to break off big plays. He’s worth adding for teams with roster flexibility.</p>
+                    </li>
+                    <li><strong>Grant Calcaterra (TE, PHI) - FAAB: 3-5%</strong>
+                        <p>Calcaterra’s role in Philly’s offense has increased in recent weeks. He’s a dart-throw option for TE-streaming managers.</p>
+                    </li>
+                    <li><strong>Will Levis (QB, TEN) - FAAB: 3-5%</strong>
+                        <p>Levis faces a favorable matchup in Week 15 and could be a solid streaming option for QB-needy teams.</p>
+                    </li>
+                    <li><strong>Mike Williams (WR, LAC) - FAAB: 3-5%</strong>
+                        <p>Williams remains a volatile WR option, but his big-play potential makes him worth a stash in deeper leagues.</p>
+                    </li>
+                    <li><strong>Noah Fant (TE, SEA) - FAAB: 3-5%</strong>
+                        <p>Fant has been consistent in Seattle’s offense. He’s a low-cost streaming option for Week 15 matchups.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        &copy; 2024 Diab Fantasy Football League. All rights reserved.
+    </footer>
+
+    <!-- Christmas-themed falling snow -->
+    <div class="snow" id="snow-container"></div>
+
+    <script>
+        const snowContainer = document.getElementById('snow-container');
+
+        // Create falling snowflakes
+        function createSnowflakes() {
+            for (let i = 0; i < 100; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.classList.add('snowflake');
+                snowflake.style.left = `${Math.random() * 100}vw`;
+                snowflake.style.animationDuration = `${Math.random() * 5 + 5}s`;
+                snowflake.style.animationDelay = `${Math.random() * 5}s`;
+                snowContainer.appendChild(snowflake);
+            }
+        }
+
+        createSnowflakes();
+
+        // Detect when the News section is in view and autoplay audio
+        const newsSection = document.getElementById('news');
+        const newsAudio = document.getElementById('news-audio');
+        let newsAudioPlayed = false;
+
+        document.addEventListener('scroll', () => {
+            const rect = newsSection.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0 && !newsAudioPlayed) {
+                newsAudio.src += "&autoplay=1"; // Add autoplay query when in view
+                newsAudioPlayed = true;
+            }
+        });
+    </script>
+</body>
+</html>
